@@ -21,6 +21,7 @@ const archer = {
 console.log('1', archer)
 // wizard.heal.call(archer, 50, 30);
 // wizard.heal.apply(archer, [50, 30])
+// these concepts are about function borrowing
 const healArcher = wizard.heal.bind(archer, 50, 30);
 healArcher() // bind allows us to store the function for laster use
 console.log('2', archer)
